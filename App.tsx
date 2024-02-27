@@ -1,23 +1,16 @@
+import { View, Text,SafeAreaView } from 'react-native'
 import React from 'react'
+import AppStyle from './AppStyle'
+import Carousel from './src/components/Carousel/Carousel'
 
-import {
-  View,
-  Text,
-  SafeAreaView
-} from 'react-native'
 
-function App(){
- return (
-  <SafeAreaView>
-  <View>
-   <Text >Hello World!</Text>
-   <Text >Hello World!</Text>
-   <Text >Hello World!</Text>
-   <Text >Hello World!</Text>
-   <Text >Hello World!</Text>
-  </View>
-</SafeAreaView>
- )
+export default function App() {
+  return (
+    <View>
+       <SafeAreaView>
+        <Carousel />
+
+       </SafeAreaView>
+    </View>
+  )
 }
-
-export default App;
